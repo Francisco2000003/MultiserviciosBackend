@@ -1,0 +1,31 @@
+# --- Núcleo ---
+Django==5.1.2
+djangorestframework==3.15.2
+django-cors-headers==4.4.0
+
+# Autenticación JWT (opcional; déjalo si vas a emitir tokens)
+djangorestframework-simplejwt==5.3.1
+
+# Servir estáticos en producción (sin nginx extra)
+whitenoise==6.7.0
+
+# Servidor WSGI recomendado en Hostinger
+gunicorn==22.0.0
+
+# Variables de entorno (.env)
+python-dotenv==1.0.1
+
+# Manejo de imágenes/archivos (opcional pero útil)
+Pillow==10.4.0
+
+# --- Base de datos: elige SOLO una opción ---
+# Opción A: MySQL / MariaDB (recomendada si tu hosting te da MySQL)
+mysqlclient==2.2.4
+# Si tienes problemas compilando mysqlclient, usa la alternativa pura-Python:
+# PyMySQL==1.1.1
+
+# Opción B: PostgreSQL
+# psycopg2-binary==2.9.9
+
+# --- Extra útil en Windows (zonas horarias). En Linux normalmente no hace falta ---
+# tzdata==2025.1
